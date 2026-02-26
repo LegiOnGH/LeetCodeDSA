@@ -1,8 +1,34 @@
+import java.util.Scanner;
+
 public class AddTwoNum {
+
+    public static int[] convertToArray(String input) {
+        String[] parts = input.split(" ");
+        int[] arr = new int[parts.length];
+
+        for(int i = 0; i < parts.length; i++){
+            arr[i] = Integer.parseInt(parts[i]);
+        }
+
+        return arr;
+    }
     public static void main(String []args){
         Solution2 obj = new Solution2();
-        ListNode l1 = ListNode.createList(new int[]{2,4,3});
-        ListNode l2 = ListNode.createList(new int[]{5,6,4});
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter elements of first list (space separated):");
+        String input1 = sc.nextLine();
+
+        System.out.println("Enter elements of second list (space separated):");
+        String input2 = sc.nextLine();
+
+        sc.close();
+
+        int[] arr1 = convertToArray(input1);
+        int[] arr2 = convertToArray(input2);
+
+        ListNode l1 = ListNode.createList(arr1);
+        ListNode l2 = ListNode.createList(arr2);
         ListNode result = obj.addNum(l1, l2);
         while(result!=null){
             System.out.print(result.val+" ");
