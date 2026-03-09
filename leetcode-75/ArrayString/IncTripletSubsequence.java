@@ -1,3 +1,4 @@
+package ArrayString;
 import java.util.Scanner;
 
 public class IncTripletSubsequence{
@@ -21,6 +22,8 @@ https://leetcode.com/problems/increasing-triplet-subsequence
 Given an integer array nums, return true,
 if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. 
 If no such indices exists, return false.
+
+Greedy Algorithm / Array Traversal
 
 Approach:
 Traverse the array once while maintaining two variables:
