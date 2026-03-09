@@ -18,15 +18,15 @@ Currently following the **LeetCode 75 study plan**.
 
 ## Array / String
 
-✔ Merge Strings Alternately
-✔ GCD of Strings
-✔ Kids With the Greatest Number of Candies
-✔ Can Place Flowers
-✔ Reverse Vowels of a String
-✔ Reverse Words in a String
-✔ Product of Array Except Self
-✔ Increasing Triplet Subsequence
-✔ String Compression
+✔ Merge Strings Alternately  
+✔ GCD of Strings  
+✔ Kids With the Greatest Number of Candies  
+✔ Can Place Flowers  
+✔ Reverse Vowels of a String  
+✔ Reverse Words in a String  
+✔ Product of Array Except Self  
+✔ Increasing Triplet Subsequence  
+✔ String Compression  
 
 (More problems will be added as I progress through the study plan.)
 
