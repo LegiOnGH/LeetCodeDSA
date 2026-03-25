@@ -14,6 +14,7 @@ public class MaxConsecutiveOnes {
         }
         System.out.println("Enter value of k: ");
         int k = sc.nextInt();
+        sc.close();
 
         Sol16 sol = new Sol16();
         System.out.println("Maximum consecutive ones after flipping k 0's: " + sol.longestOnes(nums, k));
