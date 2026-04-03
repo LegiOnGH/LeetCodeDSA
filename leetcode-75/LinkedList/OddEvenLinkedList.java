@@ -46,6 +46,38 @@ class ListNode {
         this.next = null;
     }
 }
+/*
+https://leetcode.com/problems/odd-even-linked-list
+
+Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
+The first node is considered odd, and the second node is even, and so on.
+Note that the relative order inside both the even and odd groups should remain as it was in the input.
+You must solve the problem in O(1) extra space complexity and O(n) time complexity.
+
+Linked List / Two Pointers / In-place Reordering
+
+Approach:
+• Separate the linked list into two parts:
+  - Odd indexed nodes
+  - Even indexed nodes
+• Use three pointers:
+  - odd → tracks the last node in the odd list
+  - even → tracks the last node in the even list
+  - evenHead → stores the head of the even list (to attach later)
+• Traverse the list:
+  - Link odd nodes together by skipping even nodes.
+  - Link even nodes together by skipping odd nodes.
+• Continue until the end of the list.
+• Finally, connect the end of the odd list to the head of the even list.
+
+Time Complexity:
+• O(n)
+• The list is traversed once.
+
+Space Complexity:
+• O(1)
+• Reordering is done in-place using only pointers.
+*/
 
 class Sol30{
     public ListNode oddEvenList(ListNode head){
